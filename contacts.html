@@ -1,0 +1,140 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Property Domain</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="projectStyles.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+	<div id="wrapper">
+		<header>
+			<h1>The Real Estate Company</h1>
+		</header>
+		<nav>
+			<ul>
+				<li><a href="home.html">Home</a></li>
+				<li><a href="listings.html">Listings</a></li>
+				<li id="page">Contacts</li>
+				<li><a href="map.html">Site Map</a></li>
+			</ul>
+		</nav>
+		<main>
+
+			<h2>Please fill in the form prior to contacting us:</h2>
+			<p></p>
+			<fieldset>
+			<form action="mailto:mfederichi@pd.ca" method="post">
+				<div class="grid-container">
+
+					<div class="item1">
+						<label for="txtFirstName">First Name:</label>
+					</div>
+					<div class="item2">
+						<input id="txtFirstName" name="txtFirstName" size="10" tabindex="3" type="text"
+							required="required">
+					</div>
+
+					<div class="item3">
+						<label for="txtLastName">Last Name:</label>
+					</div>
+					<div class="item4">
+						<input id="txtLastName" name="txtLastName" size="10" tabindex="5" type="text"
+							required="required">
+					</div>
+					<div class="item5">
+						<label for="txtPhoneNumber">Phone Number:</label>
+					</div>
+					<div class="item6">
+						<input id="txtPhoneNumber" name="txtPhoneNumber" size="16" tabindex="7" type="text"
+							required="required" placeholder="+1(000)000-00-00">
+					</div>
+					<div class="item7">
+						<label for="txtEmail">E-mail:</label>
+					</div>
+					<div class="item8">
+						<input id="txtEmail" name="txtEmail" size="20" tabindex="9" type="text" required="required"
+							placeholder="adress@domain.com">
+					</div>
+					<div class="item9">
+						<label for="lstAppartType">Appartment Type:</label>
+					</div>
+					<div class="item10">
+						<select id="lstCourses">
+							<option value="DetachedHouse">Detached House</option>
+							<option value="TownHouse">Town House</option>
+							<option value="Condo">Condo</option>
+							<option value="Appartment">Appartment</option>
+						</select>
+					</div>
+					<div class="item11">
+						<label for="lstNumberOfBedrooms">Number of Bedrooms</label>
+					</div>
+					<div class="item12">
+						<select id="lstNumberOfBedrooms">
+							<option value="1">1</option>
+							<option value="2">2</option>
+							<option value="3">3</option>
+							<option value="4">4</option>
+						</select>
+					</div>
+					<div class="item13">
+						<label for="lstNumberOfBethrooms">Number of Bethrooms</label>
+					</div>
+					<div class="item14">
+						<select id="lstNumberOfBethrooms">
+							<option value="1">1</option>
+							<option value="2">2</option>
+							<option value="3">3</option>
+						</select>
+					</div>
+					<div class="item15">
+						<label for="rngBudget">Budget (from 50k to 5M):</label>
+					</div>
+					<div class="item16">
+						<input id="rngBudget" name="rngBudget" type="range" min="50000" max="5000000" step="5000"
+							value="50000" oninput="document.getElementById('rangeBudgetLabel').innerHTML = this.value;">
+						<em onclick="innerHTML = 50000" id="rangeBudgetLabel"></em>
+					</div>
+					<script>
+						function myFunction() {
+							document.getElementById('rangeBudgetLabel').innerHTML = '';
+						};
+					</script>
+					<div class="item17">
+						<label for="txtComments">Comments:</label>
+					</div>
+					<div class="item18">
+						<textarea id="txtComments" cols="40" name="txtComments" rows="4" tabindex="11"
+							placeholder="---please leave here your comments---"></textarea>
+					</div>
+				</div>
+					<p class="buttons">
+						<input name="btnSubmit" tabindex="13" type="submit" value="Send Form">
+						<input onclick="myFunction()" name="btnReset" tabindex="15" type="reset" value="Clear Form">
+					</p>
+				</fieldset>
+				
+			</form>
+			<h2>Contact us:</h2>
+			<p id="contacts">
+			Phone: (067) 123-12-12 <br>
+			Email: <a href="mailto:mfederichi@pd.ca">mfederichi@pd.ca</a>
+		</p>
+		</main>
+		<aside>
+			<figure>
+				&nbsp;<img alt="Realtor" height="329" src="images/Realtor.jpg" width="336"><br>CEO and
+				Co-Founder<br><strong>Monica Federichi</strong>
+			</figure>
+		</aside>
+		<footer>
+			This website was created for educational purposes. All characters are the author's fantasy. Copyright &copy;
+			2020
+		</footer>
+	</div>
+</body>
+
+</html>
